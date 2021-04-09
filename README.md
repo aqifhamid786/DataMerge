@@ -13,8 +13,9 @@ Both records manages to join 30031 records.
 #### Latency of CrossJoin strategy:   ~35000 ms
 #### Latency of HashedNGram strategy: ~6500 ms
 
-## Configuration
+## Instructions
 Please update Configuration.java file to setup source and destination file.
+Incase of any issue after first project load, please follow _File > Invalidate Caches / Restart_ option.
 
 ## Assumption
 - We find a first single match for each of the record in the right relation (Table#2).
