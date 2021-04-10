@@ -7,9 +7,10 @@ Cross join is a naive merging method. It picks up a row of the left relation and
 In this strategy, we first build a hash table of the _model_ column of the left relation (Table#1). Next, we probe it with the n-grams of the _model_ and _description_ column to find the matches.  
 
 ## Performance Comparison
-No. Left Records:   3880
-No. Right records:  100344
-Both records manage to join 30031 records.
+- No. of Left Records:   3880
+- No. of Right records:  100344
+- Both records manage to join 30031 records.
+
 #### Latency of CrossJoin strategy:   ~35000 ms
 #### Latency of HashedNGram strategy: ~6500 ms
 
