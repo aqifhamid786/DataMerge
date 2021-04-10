@@ -20,7 +20,7 @@ In case of any issue after the first project load, please follow _File > Invalid
 
 ## Assumptions
 
-- We match the whole _model name_ from table#1 into table#2. We assume that either the _model name_ exists in the model or description column of the second table or it does not. Eyeballing at the results shows that deviation from this technique may give rise to false positives. Currently, we do not have a way to quantify _false positives_.
+- We match the complete _model name_ string from table#1. We assume that the complete character sequence for _model name_ either exists in the model or description column of the second table or it does not. Eyeballing at the results shows that deviation from this technique may give rise to false positives. Currently, we do not have a way to quantify the false positives.
 - We find a first single match for each of the record in the right relation (Table#2).
 - Records start right after the row containing the header of the relation in the excel sheet.
 - We only have number or string data in the columns.
