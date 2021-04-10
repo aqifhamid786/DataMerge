@@ -4,7 +4,7 @@ Application is flexible enough to read (and sink) data from (and to) different s
 ### CrossJoin
 Cross join is a naive merging method. It picks up a row of the left relation and compares it against all of the records of the right relation, unless it finds a match. The process continues unless all of the rows of the left relation are processed.
 ### HashedNGram
-In this strategy, we first build a hash table of the _model_ column of the left relation (Table#1). Next, we probe it with the n-grams of the _model_ and _description_ column to find the matches.  
+In this strategy, we first build a hash table of the _model_ column of the left relation (Table#1). Next, we probe it with the n-grams of the _model_ and _description_ columns of the right relation to find the matches.  
 
 ## Performance Comparison
 - No. of Left Records:   3880
