@@ -9,7 +9,7 @@ In this strategy, we first build a hash table of the _model_ column of the left 
 ## Performance Comparison
 - No. of Left Records:   3880
 - No. of Right records:  100344
-- Both records manage to join 30031 records.
+- Both techniques manage to join 30031 records.
 
 #### Latency of CrossJoin strategy:   ~35000 ms
 #### Latency of HashedNGram strategy: ~6500 ms
