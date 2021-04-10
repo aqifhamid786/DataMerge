@@ -17,7 +17,7 @@ Both records manage to join 30031 records.
 Please update Configuration.java file to set up the source and destination file.
 In case of any issue after the first project load, please follow _File > Invalidate Caches / Restart_ option.
 
-## Assumption
+## Assumptions
 
 - We match the whole _model name_ from table#1 into table#2. We assume that either the _model name_ exists in the model or description column of the second table or it does not. Eyeballing at the results shows that deviation from this technique may give rise to false positives. Currently, we do not have a way to quantify _false positives_.
 - We find a first single match for each of the record in the right relation (Table#2).
